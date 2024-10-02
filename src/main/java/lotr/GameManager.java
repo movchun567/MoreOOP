@@ -40,6 +40,12 @@ public class GameManager {
         Character c1 = characterFactory.createCharacter();
         Character c2 = characterFactory.createCharacter();
 
-        gameManager.fight(c1, c2);
+        if (c1 instanceof Elf && c2 instanceof Elf) {
+            System.out.println("Endless fight between elves is happening!");
+        } else if (c1 instanceof Hobbit && c2 instanceof Hobbit) {
+            System.out.println("They are to weak to win...");
+        } else {gameManager.fight(c1, c2);}
+
+        
     }
 }
