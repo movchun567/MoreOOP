@@ -3,7 +3,7 @@ package lotr.kickstrat;
 import lotr.Character;
 import java.util.Random;
 
-public class KingKick implements KickStrategy {
+public class RoyalKick implements KickStrategy {
     private static Random random = new Random();
 
     @Override

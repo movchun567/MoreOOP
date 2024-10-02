@@ -1,11 +1,9 @@
 package lotr;
 
-import lotr.kickstrat.KnightKick;
-import java.util.Random;
+import lotr.kickstrat.RoyalKick;
 
-public class Knight extends Character {
-    private static Random random = new Random();
+public class Knight extends Royal {
     public Knight() {
-        super(2 + random.nextInt(11), 2 + random.nextInt(11), new KnightKick());
+        super(2, 12, 2, 12, new RoyalKick());
     }
 }
